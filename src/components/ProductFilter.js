@@ -37,7 +37,6 @@ function ProductFilter({ resetFilter }) {
           sx={{ width: 1 }}
         />
       </Stack>
-
       <Stack spacing={1}>
         <Typography variant="h6" sx={{ fontWeight: 600 }}>
           Category
@@ -66,7 +65,7 @@ function ProductFilter({ resetFilter }) {
           type="submit"
           color="inherit"
           variant="outlined"
-          onClick={resetFilter}
+          onClick={() => resetFilter}
           startIcon={<ClearAllIcon />}
         >
           Clear All
